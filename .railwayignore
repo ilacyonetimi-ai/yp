@@ -1,0 +1,123 @@
+# Railway ignore file - Reduce build size
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.venv
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large data files and models
+*.bin
+*.safetensors
+*.h5
+*.pkl
+*.pickle
+*.joblib
+*.onnx
+*.pb
+
+# Cache and temp files
+.cache/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Logs
+*.log
+matnix.log
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Large files
+memory/
+projects/
+sandbox/
+temp/
+uploads/
+plots/
+backups/
+
+# Google Drive files
+drive_downloads/
+token.json
+credentials.json
+
+# Compressed files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar
+
+# Media files
+*.mp3
+*.wav
+*.mp4
+*.avi
+*.mkv
+*.mov
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.webp
+*.tiff
+
+# Documents
+*.pdf
+*.docx
+*.xlsx
+*.pptx
+
+# Environment files
+.env
+.env.local
+.env.production
