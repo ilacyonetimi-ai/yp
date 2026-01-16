@@ -842,9 +842,14 @@ if __name__ == '__main__':
     with open(templates_dir / 'index.html', 'w', encoding='utf-8') as f:
         f.write(index_template())
     
+    # Get port from environment variable (Render.com requirement)
+    port = int(os.environ.get('PORT', 5000))
+    
     print("🚀 MaTniX AI API Başlatılıyor...")
-    print("📊 API Dokümantasyonu: http://localhost:5000/api/docs")
-    print("🌐 Web Arayüzü: http://localhost:5000")
+    print(f"📊 Port: {port}")
+    print("📊 API Dokümantasyonu: /api/docs")
+    print("🌐 Web Arayüzü: /")
     print("🔑 Giriş Bilgileri: admin / 7819")
     
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=port, debug=False)
+
